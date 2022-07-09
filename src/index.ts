@@ -1,1 +1,1 @@
-export const Greeter = (name: string) => `Hello ${name}`;
+import './to-match-image/to-match-image';

@@ -1,4 +1,14 @@
-import { Greeter } from '../index';
-test('My Greeter', () => {
-  expect(Greeter('Carl')).toBe('Hello Carl');
+import React from 'react';
+import '../index';
+
+describe('toMatchImage', () => {
+  it('should match previous image', () => {
+    const Component = () => (
+      <div>Hello</div>
+    );
+
+    // @ts-ignore
+    expect(<Component />).toMatchImage();
+  });
+
 });
