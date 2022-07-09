@@ -1,0 +1,19 @@
+{
+  "name": "@no-snapshots/javascript",
+  "version": "0.0.1-alpha",
+  "description": "JS runtime for no-snapshots",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/no-snapshots/javascript.git"
+  },
+  "author": "Shubham Naik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/no-snapshots/javascript/issues"
+  },
+  "homepage": "https://github.com/no-snapshots/javascript#readme"
+}
