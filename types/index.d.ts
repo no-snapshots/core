@@ -5,3 +5,6 @@ declare namespace jest {
     toMatchImage(): R;
   }
 }
+
+
+declare module 'react-serialize';

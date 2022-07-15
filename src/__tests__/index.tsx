@@ -4,7 +4,7 @@ import '../index';
 describe('toMatchImage', () => {
   it('should match previous image', () => {
     const Component = () => (
-      <div>Hello</div>
+      <div style={{ width: '200px', height: '250px', backgroundColor: 'blue'}}>test</div>
     );
 
     // @ts-ignore

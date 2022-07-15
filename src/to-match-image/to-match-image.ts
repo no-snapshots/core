@@ -1,17 +1,20 @@
 import { expect } from '@jest/globals';
 import { ReactElement } from 'react';
 import { renderHTML } from './utils/render-html';
-import saveFile from './utils/save-file';
-import { ElementStorageObject } from '../types';
+import {  updateFileTest } from './utils/update-file-test';
+import fs from "fs";
+import { TEST_CONTENT_FILE } from '../constants';
 
-const htmlBuilder: ElementStorageObject[] = []
+beforeAll(() => {
+  fs.writeFileSync(TEST_CONTENT_FILE, JSON.stringify([]));
+});
 
 expect.extend({
   toMatchImage: function toMatchImage(Element: ReactElement) {
-    htmlBuilder.push({
-      html: renderHTML(Element),
-      title: expect.getState().currentTestName || 'Unknown Test',
-    });
+    updateFileTest({
+        html: renderHTML(Element),
+        title: expect.getState().currentTestName || 'Unknown Test',
+      });
 
     return {
       message: () => 'The test has been added to the image queue',
@@ -21,7 +24,7 @@ expect.extend({
 });
 
 afterAll(() => {
-  saveFile(JSON.stringify(htmlBuilder));
+  // fs.rmSync('image-content.tmp');
 });
 
 export {};

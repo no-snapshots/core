@@ -1,25 +1,45 @@
-import type { Reporter, Test, AggregatedResult, TestResult, ReporterOnStartOptions } from '@jest/reporters'
+import type { Reporter } from '@jest/reporters'
+import { submitTestToServer } from './utils/submit-test-to-server';
+import { getTestContents } from './utils/get-test-content';
+import { cleanupTest } from './utils/cleanup-test';
+import { waitForTestCompletion } from './utils/wait-for-test-completion';
 
-/**
- * @see https://github.com/facebook/jest/blob/master/packages/jest-reporters/src/types.ts
- * @see https://jestjs.io/docs/en/configuration#reporters-arraymodulename--modulename-options
- */
-class Analyzer implements Reporter {
-  onRunStart(results: AggregatedResult, options: ReporterOnStartOptions): void | Promise<void> {
-    console.log('[MY REPORTER] onRunStart!')
-  }
-  onTestStart(test: Test): void | Promise<void> {
-    console.log('[MY REPORTER] onTestStart!')
-  }
-  onTestResult(test: Test, testResult: TestResult, aggregatedResult: AggregatedResult): void | Promise<void> {
-    console.log('[MY REPORTER] onTestResult!')
-  }
-  onRunComplete(contexts: Set<any>, results: AggregatedResult): void | Promise<void> {
-    console.log('[MY REPORTER] onRunComplete!')
-  }
-  getLastError(): void | Error {
-    console.log('[MY REPORTER] last error!')
+const logger = console.log;
+
+let instanceCleanupUrl: string | undefined;
+
+class Analyzer implements Partial<Reporter> {
+  async onRunComplete(): Promise<void> {
+    const testContents = getTestContents();
+    const { pass, instanceReviewUrl } = await submitTestToServer(testContents);
+
+    if (pass) {
+      logger('Your image tests have passed!');
+
+      return;
+    }
+
+    instanceCleanupUrl = instanceReviewUrl;
+
+    logger('===========================');
+    logger('We have detected changes in your components');
+    logger('===========================');
+    logger(`Please review them here\n${instanceReviewUrl}`)
+
+    await waitForTestCompletion(instanceReviewUrl!);
+
+    logger('===========================');
+    logger('Your tests are over');
+    logger('===========================');
+
+    instanceCleanupUrl = undefined;
   }
 }
+
+process.on('exit', () => {
+  if (instanceCleanupUrl) {
+    cleanupTest(instanceCleanupUrl);
+  }
+});
 
 export default Analyzer;

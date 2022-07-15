@@ -1,4 +1,4 @@
-export type ElementStorageObject = {
+export type TestContentObject = {
   html: string;
   title: string;
 }
