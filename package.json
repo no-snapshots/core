@@ -1,10 +1,11 @@
 {
-  "name": "@no-snapshots/javascript",
+  "name": "@no-snapshots/vert-react",
   "version": "0.0.1-alpha",
-  "description": "JS runtime for no-snapshots",
+  "description": "Simplifying visual regression testing",
   "main": "lib/index.js",
   "scripts": {
     "test": "jest --config jest.config.json",
+    "test:integration": "",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
@@ -33,12 +34,6 @@
   ],
   "homepage": "https://github.com/no-snapshots/javascript#readme",
   "devDependencies": {
-    "@types/jest": "^28.1.4",
-    "@types/node": "^18.0.3",
-    "@types/node-fetch": "2",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
-    "jest-environment-jsdom": "^28.1.2",
     "prettier": "^2.7.1",
     "ts-jest": "^28.0.5",
     "ts-node": "^10.8.2",
@@ -50,12 +45,8 @@
     "node": "^14.15.0 || ^16.13.0 || >=18.0.0"
   },
   "dependencies": {
+    "glob": "^8.0.3",
     "jest": "^28.1.2",
-    "node-fetch": "^2.6.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-serialize": "^0.2.0",
-    "react-test-renderer": "^18.2.0",
-    "window": "^4.2.7"
+    "node-fetch": "^2.6.6"
   }
 }

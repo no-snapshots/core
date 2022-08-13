@@ -1,1 +1,3 @@
-import './to-match-image/to-match-image';
+import fs from 'fs';
+import path from 'path';
+
