@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2a8ae9a-8202-4dae-8600-bfc3ac2885da" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.vert/vert.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/compile-files.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vert.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vert/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/.vert/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/vert.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/get-vert-dir.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/get-config-file.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/get-config-file.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/pre-setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/pre-setup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/process-file.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/process-file.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/save-instance-image.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/save-instance-image.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/dir/dir.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test/dir/dir.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DHpbcUeDL1DpQFuqxUd0eyO0Aa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/shubhamnaik/Developer/vert/src/utils",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "/Users/shubhamnaik/Developer/vert/node_modules/typescript/lib"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2a8ae9a-8202-4dae-8600-bfc3ac2885da" name="Changes" comment="" />
+      <created>1660365936269</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660365936269</updated>
+      <workItem from="1660365937612" duration="12044000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
