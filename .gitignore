@@ -1,6 +1,6 @@
 node_modules
-lib
 coverage
 yarn-error.log
 image-content.tmp
 .nosnapshotrc
+.vert/tmp

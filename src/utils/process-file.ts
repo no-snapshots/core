@@ -1,9 +1,12 @@
+import 'node-self'
 import { renderHTML } from './render-component';
 import { saveInstanceImage } from './save-instance-image';
 import React, { FunctionComponent, ReactElement } from 'react';
+import path from "path";
+import {getVertDir} from "./get-vert-dir";
 
 const processFile = async (filePath: string) => {
-  const fileReturnedData = require(filePath);
+  const fileReturnedData = require(path.join(getVertDir(), 'tmp', 'builds', filePath));
 
   let ValidReactElement: ReactElement | null = null;
   let reactFn: FunctionComponent | null = null;
@@ -28,7 +31,7 @@ const processFile = async (filePath: string) => {
 
   const html = renderHTML(ValidReactElement);
 
-  await saveInstanceImage(html, reactFn!.name);
+  await saveInstanceImage(html, filePath);
 };
 
 export { processFile };

@@ -6,7 +6,7 @@ interface ConfigFileOptions {
 }
 
 const getConfigFile = (): ConfigFileOptions => {
-  return require(path.join(process.cwd(), '.vert', 'config.js'));
+  return require(path.join(process.cwd(), '.vert', 'vert.config.js'));
 };
 
 export { getConfigFile };

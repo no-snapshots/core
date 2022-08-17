@@ -4,7 +4,7 @@
   "description": "Simplifying visual regression testing",
   "main": "lib/index.js",
   "private": false,
-  "bin": "./scripts/vert.js",
+  "bin": "./vert.js",
   "scripts": {
     "test": "jest --config jest.config.json",
     "test:integration": "ts-node src/index.ts",
@@ -47,6 +47,7 @@
     "@types/react-dom": "^18.0.6",
     "prettier": "^2.7.1",
     "ts-jest": "^28.0.5",
+    "ts-loader": "^9.3.1",
     "ts-node": "^10.8.2",
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
@@ -61,8 +62,10 @@
     "glob": "^8.0.3",
     "jest": "^28.1.2",
     "node-fetch": "^3.2.10",
+    "node-self": "^1.0.0-d",
     "puppeteer": "^16.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "webpack": "^5.74.0"
   }
 }

@@ -5,7 +5,7 @@ const saveInstanceImage = async (html: string, componentName: string) => {
   const page = await browser.newPage();
   await page.setContent(html);
 
-  await page.screenshot({ path: `.vert/uploads/${componentName}.png` });
+  await page.screenshot({ path: `.vert/tmp/uploads/${componentName}.png` });
 
   await browser.close();
 };
